@@ -34,3 +34,8 @@
   font-size: 2rem;
   color: #fff;
 }
+
+.output > .operand {
+  font-size: 1rem;
+  color: #fff;
+}
