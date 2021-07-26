@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../Stylesheets/Calculator.css';
 import '../src/style.css';
 const Calculator = () => {
-  let [currElement, setcurrElement] = useState('');
+  let [currElement, setcurrElement] = useState('0');
   let [prevElement, setprevElement] = useState('');
   let [operator, setOperator] = useState('');
-  let [decimal, setdecimalOperator] = useState('');
+  let [decimal, setdecimalOperator] = useState('0');
   const Handler = event => {
     const values = event.target;
     if (values.className === 'number' && values.innerHTML !== '.') {
