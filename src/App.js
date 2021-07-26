@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.css';
-
+import Navbar from '../Components/Navbar.js';
+import Calculator from '../Components/Calculator.js';
 export default function App() {
   return (
     <div>
-      <h1>Crypto Calculator</h1>
-      <p>First Commit</p>
+      <Navbar />
+      <Calculator />
     </div>
   );
 }
