@@ -12,7 +12,7 @@ const Calculator = () => {
       setcurrElement(() => {
         currElement += values.innerHTML.toString();
         // currElement = parseFloat(currElement);
-        return (currElement = currElement.toString());
+        return currElement;
       });
       console.log(currElement);
     }
