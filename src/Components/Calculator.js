@@ -32,7 +32,7 @@ const Calculator = () => {
     if (values.innerHTML === '.') {
       setcurrElement(() => {
         if (currElement.includes('.')) {
-          console.log('1');
+          // console.log('1');
           return currElement;
         } else {
           console.log(currElement.slice(-1));
