@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sasidharan98/react_calcstatic/css/main.8c91680b.chunk.css",
+    "main.js": "/sasidharan98/react_calcstatic/js/main.1dd0d12a.chunk.js",
+    "main.js.map": "/sasidharan98/react_calcstatic/js/main.1dd0d12a.chunk.js.map",
+    "runtime-main.js": "/sasidharan98/react_calcstatic/js/runtime-main.bbf6c23f.js",
+    "runtime-main.js.map": "/sasidharan98/react_calcstatic/js/runtime-main.bbf6c23f.js.map",
+    "static/js/2.eb067b06.chunk.js": "/sasidharan98/react_calcstatic/js/2.eb067b06.chunk.js",
+    "static/js/2.eb067b06.chunk.js.map": "/sasidharan98/react_calcstatic/js/2.eb067b06.chunk.js.map",
+    "index.html": "/sasidharan98/react_calcindex.html",
+    "static/css/main.8c91680b.chunk.css.map": "/sasidharan98/react_calcstatic/css/main.8c91680b.chunk.css.map",
+    "static/js/2.eb067b06.chunk.js.LICENSE.txt": "/sasidharan98/react_calcstatic/js/2.eb067b06.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbf6c23f.js",
+    "static/js/2.eb067b06.chunk.js",
+    "static/css/main.8c91680b.chunk.css",
+    "static/js/main.1dd0d12a.chunk.js"
+  ]
+}
