@@ -11,7 +11,7 @@ const Calculator = () => {
     if (values.className === 'number' && values.innerHTML !== '.') {
       setcurrElement(() => {
         currElement += values.innerHTML.toString();
-        currElement = parseFloat(currElement);
+        // currElement = parseFloat(currElement);
         return (currElement = currElement.toString());
       });
       console.log(currElement);
