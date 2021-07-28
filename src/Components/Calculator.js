@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../Stylesheets/Calculator.css';
 import '../style.css';
 const Calculator = () => {
-  let [currElement, setcurrElement] = useState('0');
+  let [currElement, setcurrElement] = useState('');
   let [prevElement, setprevElement] = useState('');
   let [operator, setOperator] = useState('');
   let [decimal, setdecimalOperator] = useState('0');
@@ -10,8 +10,17 @@ const Calculator = () => {
     const values = event.target;
     if (values.className === 'number' && values.innerHTML !== '.') {
       setcurrElement(() => {
-        currElement += values.innerHTML.toString();
-        // currElement = parseFloat(currElement);
+        if (
+          values.innerHTML === '0' &&
+          currElement.length > 0 &&
+          currElement.slice(0, 1) === '0'
+        ) {
+          currElement = '';
+        } else {
+          currElement += values.innerHTML.toString();
+        }
+
+        currElement = parseFloat(currElement);
         return currElement;
       });
       console.log(currElement);
@@ -90,7 +99,7 @@ const Calculator = () => {
   useEffect(() => {
     setdecimalOperator(
       (decimal = currElement.toLocaleString('en', {
-        maximumFractionDigits: 0
+        maximumFractionDigits: 4
       }))
     );
     console.log('effect');
