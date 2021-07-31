@@ -40,13 +40,16 @@ const Calculator = () => {
     }
     if (values.innerHTML === '.') {
       setcurrElement(() => {
-        if (currElement.includes('.')) {
-          // console.log('1');
-          return currElement;
-        } else {
-          console.log(currElement.slice(-1));
-          return (currElement += values.innerHTML);
+        if (typeof currElement === 'string') {
+          if (currElement.includes('.')) {
+            // console.log('1');
+            return currElement;
+          } else {
+            console.log(currElement.slice(-1));
+            return (currElement += values.innerHTML);
+          }
         }
+        return (currElement += values.innerHTML);
       });
     }
     if (values.innerHTML === '=') {
